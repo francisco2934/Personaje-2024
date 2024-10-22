@@ -39,3 +39,15 @@ https://wokwi.com/projects/410227545790051329
 
 
 
+##Imagen de la captura de cisco Python
+
+
+![image](https://github.com/user-attachments/assets/f98d62de-7c0d-4bfa-a74b-4395530532d2)
+
+
+
+
+
+
+
+
