@@ -43,6 +43,8 @@ https://wokwi.com/projects/410227545790051329
 
 
 ![image](https://github.com/user-attachments/assets/f98d62de-7c0d-4bfa-a74b-4395530532d2)
+![image](https://github.com/user-attachments/assets/5437f9da-dfc9-4e78-b458-1b15e5e41010)
+
 
 
 
