@@ -8,7 +8,7 @@ Francisco Javier Torres Suarez
 
 ## Explicacion de funcionamiento
 
-El código permite que El Grinch interactúe con el entorno basado en la temperatura y la humedad. Cuando la temperatura es alta, el LED se enciende y los movimientos de las manos simulan un comportamiento activo de El Grinch. En cambio, si las condiciones ambientales son favorables (temperatura más baja), el LED se apaga y las manos regresan a una posición tranquila.
+El código permite que El Grinch interactúe con el entorno basado en la temperatura y la humedad. Cuando la temperatura es alta, el LED se enciende y los movimientos de las manos simulan un comportamiento de saludar. En cambio, si las condiciones ambientales son favorables (temperatura más baja), el LED se apaga y las manos regresan a una posición tranquila. En cabmbio si la humedad aumenta el crinh movera su mano junto el regalo disimulando que lo roba.
 
 ## Materiales a utilizar
 |Material|Imagen|Cantidad|Precio|
