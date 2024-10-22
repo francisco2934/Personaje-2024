@@ -1,32 +1,42 @@
-![image](https://github.com/user-attachments/assets/bb2f6f74-aad7-463d-bfe5-86c5a2ea8aa6)# Personaje-2024
+# Personaje-2024
+![image](https://github.com/user-attachments/assets/611eb585-158f-4bb2-b6df-8d6b108bfda6)
 ## Nombre del Personaje
-Glich
+El Grinch
 ## Creador
 Francisco Javier Torres Suarez
-##Explicacion de funcionamiento
-Mi personaje al momento de que se aserca a 15 centimetros a un persona comienza a bailar.,,,,,,(luz, sonido y movimiento)
 
-##Materiales a utilizar
+
+## Explicacion de funcionamiento
+
+El código permite que El Grinch interactúe con el entorno basado en la temperatura y la humedad. Cuando la temperatura es alta, el LED se enciende y los movimientos de las manos simulan un comportamiento activo de El Grinch. En cambio, si las condiciones ambientales son favorables (temperatura más baja), el LED se apaga y las manos regresan a una posición tranquila.
+
+## Materiales a utilizar
 |Material|Imagen|Cantidad|Precio|
 |--|--|--|--|
 |ESP32|<img src="https://github.com/user-attachments/assets/2fb063fd-c57e-492e-98c4-027652228051" width="50" />|1|120|
+|Servo|<img src="https://github.com/user-attachments/assets/0d2dcdba-e4f1-41e2-a32f-c297ad92f799" width="50" />|2|68|
+|Led|<img src="https://github.com/user-attachments/assets/ef979e96-38c4-4dac-8997-63402c91b97d" width="50" />|1|20|
 
-
-##Software a utilizar
+## Software a utilizar
 |Software|version|
-
-##Dibujo del personaje
+|--|--|
+|Arduino IDE|	2.0.0|
+|Thonny|	3.3.0|
+## Dibujo del personaje
 Imagen hecho a mano o software
+![Imagen de WhatsApp 2024-10-22 a las 15 52 14_e74a0888](https://github.com/user-attachments/assets/7625c557-719d-4800-a9ec-bdca0273db8d)
 
-##Enlaces de la simulacion de wokwi de instrumento:
+
+## Enlaces de la simulacion de wokwi de instrumento:
 https://wokwi.com/projects/410213523166693377
 
-##Enlaces de la simulacion de wokwi de personaje:
-https://wokwi.com/projects/410227545790051329
+## Enlaces de la simulacion de wokwi de personaje:
+https://wokwi.com/projects/412482093794624513
 
-##Videos
+## Videos
+https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=drive_link
 
-##Imagen de la captura de cisco c
+## Imagen de la captura de cisco c
 ![image](https://github.com/user-attachments/assets/571b9ac8-cbb7-4cb7-baf7-4079c448bd2c)
 ![image](https://github.com/user-attachments/assets/55891139-7460-4ec5-b6f5-747d7e50b86b)
 ![image](https://github.com/user-attachments/assets/ebe707fd-1d37-4687-8cf8-772487000206)
@@ -39,7 +49,7 @@ https://wokwi.com/projects/410227545790051329
 
 
 
-##Imagen de la captura de cisco Python
+## Imagen de la captura de cisco Python
 
 
 ![image](https://github.com/user-attachments/assets/f98d62de-7c0d-4bfa-a74b-4395530532d2)
