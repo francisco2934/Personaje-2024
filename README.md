@@ -1,14 +1,15 @@
 # Personaje-2024
-![image](https://github.com/user-attachments/assets/611eb585-158f-4bb2-b6df-8d6b108bfda6)
+![image](https://github.com/user-attachments/assets/e29b5e0f-570b-4209-835e-caab9e2f7b16)
+
 ## Nombre del Personaje
-El Grinch
+Mickey Mouse
 ## Creador
 Francisco Javier Torres Suarez
 
 
 ## Explicacion de funcionamiento
 
-El código permite que El Grinch interactúe con el entorno basado en la temperatura y la humedad. Cuando la temperatura es alta, el LED se enciende y los movimientos de las manos simulan un comportamiento de saludar. En cambio, si las condiciones ambientales son favorables (temperatura más baja), el LED se apaga y las manos regresan a una posición tranquila. En cabmbio si la humedad aumenta el crinh movera su mano junto el regalo disimulando que lo roba.
+El código permite que Mickey Mouse interactúe con el entorno de manera divertida. Cuando la temperatura es alta, Mickey mueve una de sus orejas mientras se encienden dos LEDs rojos, simulando una reacción animada. Además, se reproduce una melodía navideña para ambientar el momento. Si las condiciones ambientales son favorables (temperatura más baja), las orejas vuelven a su posición inicial y los LEDs se apagan. Por otro lado, si la humedad aumenta, Mickey moverá la oreja en sincronía con la música, creando un espectáculo más dinámico.
 
 ## Materiales a utilizar
 |Material|Imagen|Cantidad|Precio|
