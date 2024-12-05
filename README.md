@@ -15,14 +15,16 @@ El código permite que Mickey Mouse interactúe con el entorno de manera diverti
 |Material|Imagen|Cantidad|Precio|
 |--|--|--|--|
 |ESP32|<img src="https://github.com/user-attachments/assets/2fb063fd-c57e-492e-98c4-027652228051" width="50" />|1|120|
-|Servo|<img src="https://github.com/user-attachments/assets/0d2dcdba-e4f1-41e2-a32f-c297ad92f799" width="50" />|2|68|
-|Led|<img src="https://github.com/user-attachments/assets/ef979e96-38c4-4dac-8997-63402c91b97d" width="50" />|1|20|
+|Servo|<img src="https://github.com/user-attachments/assets/d67ff593-fb93-4d22-81e1-a65a9ee8abc4" width="50" />|1|50|
+|Led|<img src="https://github.com/user-attachments/assets/cb4cb7c3-463b-4c8d-8a79-3035dc46dd4f" width="50" />|2|40|
+|Buzzer|<img src="https://github.com/user-attachments/assets/cc56f6cf-d453-4dc7-9f74-329fd744fc03" width="50" />|1|10|
 
 ## Software a utilizar
 |Software|version|
 |--|--|
 |Arduino IDE|	2.0.0|
 |Thonny|	3.3.0|
+
 ## Dibujo del personaje
 Imagen hecho a mano o software
 ![Imagen de WhatsApp 2024-10-22 a las 15 52 14_e74a0888](https://github.com/user-attachments/assets/7625c557-719d-4800-a9ec-bdca0273db8d)
@@ -36,6 +38,9 @@ https://wokwi.com/projects/412482093794624513
 
 ## Videos
 https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=drive_link
+
+## Video de TikTok
+https://vm.tiktok.com/ZMkdrtd5E/
 
 ## Imagen de la captura de cisco c
 ![image](https://github.com/user-attachments/assets/571b9ac8-cbb7-4cb7-baf7-4079c448bd2c)
