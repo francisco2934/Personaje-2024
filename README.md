@@ -63,3 +63,9 @@ https://vm.tiktok.com/ZMkdrtd5E/
 
 
 ## Imagen de la captura de JavaScript Essentials
+![image](https://github.com/user-attachments/assets/f8748741-67b6-40e3-a980-860c814dba43)
+![image](https://github.com/user-attachments/assets/12a867d2-e3a9-4654-b921-83e02856fe51)
+![image](https://github.com/user-attachments/assets/e06e9a46-9f3c-44c3-b12b-6c0329538927)
+![image](https://github.com/user-attachments/assets/326feddf-272e-4946-ae3a-9fcf61ab343d)
+
+
