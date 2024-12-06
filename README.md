@@ -22,7 +22,6 @@ El código permite que Mickey Mouse interactúe con el entorno de manera diverti
 ## Software a utilizar
 |Software|version|
 |--|--|
-|Arduino IDE|	2.0.0|
 |Thonny|	3.3.0|
 
 ## Dibujo del personaje
