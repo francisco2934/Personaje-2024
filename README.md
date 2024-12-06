@@ -9,7 +9,7 @@ Francisco Javier Torres Suarez
 
 ## Explicacion de funcionamiento
 
-El código permite que Mickey Mouse interactúe con el entorno de manera divertida. Cuando la temperatura es alta, Mickey mueve una de sus orejas mientras se encienden dos LEDs rojos, simulando una reacción animada. Además, se reproduce una melodía navideña para ambientar el momento. Si las condiciones ambientales son favorables (temperatura más baja), las orejas vuelven a su posición inicial y los LEDs se apagan. Por otro lado, si la humedad aumenta, Mickey moverá la oreja en sincronía con la música, creando un espectáculo más dinámico.
+El código permite que Mickey Mouse interactúe con el entorno de manera divertida. Cuando detecta movimiento, Mickey mueve una de sus orejas mientras se encienden dos LEDs que cambiean de colores automaticamente, simulando una reacción animada. Además, se reproduce una melodía navideña para ambientar el momento. Si no se detecta movimiento, las orejas vuelven a su posición inicial y los LEDs se apagan. 
 
 ## Materiales a utilizar
 |Material|Imagen|Cantidad|Precio|
@@ -33,9 +33,6 @@ Imagen hecho a mano o software
 ![Imagen de WhatsApp 2024-12-06 a las 13 42 34_d7a2d27b](https://github.com/user-attachments/assets/819cfc73-3f6c-42c6-abee-f15bb1829fb0)
 ![Imagen de WhatsApp 2024-12-06 a las 13 42 33_657377ee](https://github.com/user-attachments/assets/89399e8c-c246-4c0f-9628-10164fcdac44)
 
-## Pruebas de funcionamiento
-
-
 
 ## Enlaces de la simulacion de wokwi de personaje:
 https://wokwi.com/projects/412482093794624513
@@ -45,6 +42,178 @@ https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=dri
 
 ## Video de TikTok
 https://vm.tiktok.com/ZMkdrtd5E/
+
+## Codigo de thonny
+from machine import Pin, PWM, time_pulse_us
+from time import sleep
+
+#Configuración del buzzer en GPIO 5
+buzzer = PWM(Pin(5))
+buzzer.duty(0)  # Asegurar que el buzzer esté apagado al inicio
+
+#Configuración de los LEDs en GPIO 19
+led = Pin(19, Pin.OUT)
+led.off()  # Asegurar que los LEDs estén apagados al inicio
+
+#Configuración del servo en GPIO 17
+servo = PWM(Pin(21), freq=50)  # Frecuencia estándar para servos
+
+#Función para mover el servo a un ángulo específico (0 a 180 grados)
+def move_servo(angle):
+    min_duty = 20  # Ajusta estos valores según las especificaciones del servo
+    max_duty = 120
+    duty = int(min_duty + (angle / 180) * (max_duty - min_duty))
+    servo.duty(duty)
+
+#Configuración del sensor ultrasónico
+TRIG_PIN = 17  # GPIO para el TRIG
+ECHO_PIN = 18  # GPIO para el ECHO
+
+#Configuración de pines del sensor ultrasónico
+trig = Pin(TRIG_PIN, Pin.OUT)
+echo = Pin(ECHO_PIN, Pin.IN)
+
+#Notas musicales con sus frecuencias (en Hz)
+NOTES = {
+    "B0": 31,
+    "C1": 33, "D1": 37, "E1": 41, "F1": 44, "G1": 49, "A1": 55, "B1": 62,
+    "C2": 65, "D2": 73, "E2": 82, "F2": 87, "G2": 98, "A2": 110, "B2": 123,
+    "C3": 131, "D3": 147, "E3": 165, "F3": 175, "G3": 196, "A3": 220, "B3": 247,
+    "C4": 262, "D4": 294, "E4": 330, "F4": 349, "G4": 392, "A4": 440, "B4": 494,
+    "C5": 523, "D5": 587, "E5": 659, "F5": 698, "G5": 784, "A5": 880, "B5": 988,
+    "C6": 1047, "D6": 1175, "E6": 1319, "F6": 1397, "G6": 1568, "A6": 1760, "B6": 1976,
+    "C7": 2093, "D7": 2349, "E7": 2637, "F7": 2794, "G7": 3136, "A7": 3520, "B7": 3951,
+    "C8": 4186, "D8": 4699
+}
+
+#Melodía de "Jingle Bells" con las notas y duraciones
+melody = [
+    ("E4", 8), ("E4", 8), ("E4", 4), 
+    ("E4", 8), ("E4", 8), ("E4", 4), 
+    ("E4", 8), ("G4", 8), ("C4", 8), ("D4", 8), ("E4", 2),
+    ("F4", 8), ("F4", 8), ("F4", 8), ("F4", 8), ("F4", 8), ("E4", 8), ("E4", 8), 
+    ("E4", 8), ("E4", 8), ("D4", 8), ("D4", 8), ("E4", 8), ("D4", 4), ("G4", 4)
+]
+
+#Función para reproducir una nota
+def play_tone(note, duration):
+    if note == "":  # Silencio
+        buzzer.duty(0)
+    else:
+        buzzer.freq(NOTES[note])
+        buzzer.duty(512)  # Volumen (ajustar si necesario)
+    sleep(duration)
+    buzzer.duty(0)  # Apagar el buzzer después de la nota
+    sleep(0.05)  # Pequeña pausa entre notas
+
+#Función para medir distancia con el sensor ultrasónico
+def medir_distancia():
+    trig.off()
+    sleep(0.002)  # Pausa de 2 µs
+    trig.on()
+    sleep(0.00001)  # Pulso de 10 µs
+    trig.off()
+    
+    duracion = time_pulse_us(echo, 1, 30000)  # Tiempo en µs (máx. 30 ms)
+    if duracion <= 0:
+        return -1  # Error en la medición
+    distancia = (duracion / 2) * 0.0343  # Convertir a cm
+    return distancia
+
+#Bucle principal
+try:
+    while True:
+        distancia = medir_distancia()  # Medir distancia
+        
+        if distancia == -1:
+            print("Error: No se detecta distancia válida.")
+            led.off()  # Apagar LEDs si no hay distancia válida
+        else:
+            print("Distancia: {:.2f} cm".format(distancia))
+            
+            if distancia <= 20:  # Reproducir melodía y encender LEDs si está a menos de 20 cm
+                print("¡Objeto detectado a menos de 20 cm! Reproduciendo melodía y encendiendo LEDs...")
+                led.on()  # Encender LEDs
+                
+                # Reproducir la melodía y mover el servo al mismo tiempo
+                for note, duration in melody:
+                    move_servo(90)  # Mover el servo a 90 grados
+                    play_tone(note, 0.5 / duration)  # Reproducir melodía
+                    move_servo(0)  # Mover el servo a la posición inicial después de cada nota
+                    sleep(0.1)  # Pausa para el movimiento del servo
+
+            else:
+                buzzer.duty(0)  # Apagar buzzer
+                led.off()  # Apagar LEDs si está fuera del rango
+                move_servo(0)  # Asegurar que el servo esté en la posición inicial
+
+        sleep(0.1)  # Breve pausa antes de la siguiente medición
+except KeyboardInterrupt:
+    buzzer.deinit()
+    servo.deinit()
+    print("Programa detenido")
+ 
+## Codigo node-red
+#import para acceso a red
+import network
+#Para usar protocolo MQTT
+from umqtt.simple import MQTTClient
+from machine import Pin
+from time import sleep
+
+#Propiedades para conectar a un cliente MQTT
+MQTT_BROKER = "broker.eqmx.io"
+MQTT_USER = "UTNG_GUEST"
+MQTT_PASSWORD = "R3d1nv1t4d0s#UT"
+MQTT_CLIENT_ID = "unique_client_id_12345"
+MQTT_TOPIC = "gds0641/fjts"
+MQTT_PORT = 1883
+
+#Función para conectar a WiFi
+def conectar_wifi():
+    print("Conectando...", end="")
+    sta_if = network.WLAN(network.STA_IF)
+    sta_if.active(True)
+    sta_if.connect('Wokwi-GUEST', '')
+    while not sta_if.isconnected():
+        print(".", end="")
+        sleep(0.3)
+    print("WiFi Conectada!")
+
+#Función encargada de encender un LED cuando un mensaje lo indique
+def llegada_mensaje(topic, msg):
+    print("Mensaje:", msg)
+    if msg == b'true':
+        led.value(1)
+    elif msg == b'false':
+        led.value(0)
+
+#Función para subscribir al broker, topic
+def subscribir():
+    client = MQTTClient(MQTT_CLIENT_ID,
+                        MQTT_BROKER, 
+                        port=MQTT_PORT,
+                        user=MQTT_USER,
+                        password=MQTT_PASSWORD,
+                        keepalive=0)
+    client.set_callback(llegada_mensaje)
+    client.connect()
+    client.subscribe(MQTT_TOPIC)
+    print("Conectado a %s, en el tópico %s" % (MQTT_BROKER, MQTT_TOPIC))
+    return client
+
+#Declaro el pin del LED
+led = Pin(19, Pin.OUT)  # Cambiado al pin 19
+led.value(0)
+
+#Conectar a WiFi
+conectar_wifi()
+#Subscripción a un broker MQTT
+client = subscribir()
+
+#Ciclo infinito
+while True:
+    client.wait_msg()
 
 
 ## Imagen de la captura de cisco c
