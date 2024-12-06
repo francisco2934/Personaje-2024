@@ -30,9 +30,6 @@ Imagen hecho a mano o software
 ![Imagen de WhatsApp 2024-10-22 a las 15 52 14_e74a0888](https://github.com/user-attachments/assets/7625c557-719d-4800-a9ec-bdca0273db8d)
 
 
-## Enlaces de la simulacion de wokwi de instrumento:
-https://wokwi.com/projects/410213523166693377
-
 ## Enlaces de la simulacion de wokwi de personaje:
 https://wokwi.com/projects/412482093794624513
 
@@ -62,14 +59,8 @@ https://vm.tiktok.com/ZMkdrtd5E/
 ![image](https://github.com/user-attachments/assets/5437f9da-dfc9-4e78-b458-1b15e5e41010)
 ![image](https://github.com/user-attachments/assets/fc60238a-0794-4c7a-aeb2-d73296356b8e)
 ![image](https://github.com/user-attachments/assets/732fb939-0303-41f4-ab8a-dbd4b709205e)
+![image](https://github.com/user-attachments/assets/4f1d2dae-f3d7-43ca-a581-a7f5bfbf0f96)
 
 
 
-
-
-
-
-
-
-
-
+## Imagen de la captura de JavaScript Essentials
