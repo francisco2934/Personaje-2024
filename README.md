@@ -27,7 +27,6 @@ El código permite que Mickey Mouse interactúe con el entorno de manera diverti
 
 ## Dibujo del personaje
 Imagen hecho a mano o software
-![Imagen de WhatsApp 2024-10-22 a las 15 52 14_e74a0888](https://github.com/user-attachments/assets/7625c557-719d-4800-a9ec-bdca0273db8d)
 
 
 ## Enlaces de la simulacion de wokwi de personaje:
