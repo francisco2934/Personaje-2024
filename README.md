@@ -28,6 +28,14 @@ El código permite que Mickey Mouse interactúe con el entorno de manera diverti
 ## Dibujo del personaje
 Imagen hecho a mano o software
 
+## Imagenes de procedimeinto de creacion
+![Imagen de WhatsApp 2024-12-06 a las 13 43 45_a96b9cb2](https://github.com/user-attachments/assets/d5690fe8-ee90-47c3-9efc-5c937910144e)
+![Imagen de WhatsApp 2024-12-06 a las 13 42 34_d7a2d27b](https://github.com/user-attachments/assets/819cfc73-3f6c-42c6-abee-f15bb1829fb0)
+![Imagen de WhatsApp 2024-12-06 a las 13 42 33_657377ee](https://github.com/user-attachments/assets/89399e8c-c246-4c0f-9628-10164fcdac44)
+
+## Pruebas de funcionamiento
+
+
 
 ## Enlaces de la simulacion de wokwi de personaje:
 https://wokwi.com/projects/412482093794624513
@@ -37,6 +45,7 @@ https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=dri
 
 ## Video de TikTok
 https://vm.tiktok.com/ZMkdrtd5E/
+
 
 ## Imagen de la captura de cisco c
 ![image](https://github.com/user-attachments/assets/571b9ac8-cbb7-4cb7-baf7-4079c448bd2c)
