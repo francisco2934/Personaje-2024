@@ -42,6 +42,9 @@ https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=dri
 ## Video de TikTok
 https://vm.tiktok.com/ZMkdrtd5E/
 
+## Videos de practicas de clase
+https://drive.google.com/drive/folders/1fvg5iQsfrLAGnyksl76WLwoRzDL3q6rc?usp=drive_link
+
 ## Codigo de thonny
 from machine import Pin, PWM, time_pulse_us
 from time import sleep
