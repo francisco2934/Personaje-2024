@@ -332,6 +332,10 @@ while True:
         print(f"Error en el ciclo principal: {e}")
         sleep(1)
 
+## Imagenes de Node-RED
+![image](https://github.com/user-attachments/assets/a1b6529c-989d-4afa-9da7-a3822860a528)
+![image](https://github.com/user-attachments/assets/e2c70979-0e1c-4a73-85ac-c930f6cc92e5)
+
 
 ## Imagen de la captura de cisco c
 ![image](https://github.com/user-attachments/assets/571b9ac8-cbb7-4cb7-baf7-4079c448bd2c)
