@@ -34,7 +34,7 @@ Imagen hecho a mano o software
 
 
 ## Enlaces de la simulacion de wokwi de personaje:
-https://wokwi.com/projects/412482093794624513
+https://wokwi.com/projects/420476867650120705
 
 ## Videos
 https://drive.google.com/drive/folders/1ELphYLnZHq20B_ujfN3cbAIVe-y9Yj27?usp=drive_link
